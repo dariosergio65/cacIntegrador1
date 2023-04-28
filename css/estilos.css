@@ -1,0 +1,423 @@
+/* css -- hojas de estilo en cascada */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+/*reset*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* para que no se me agranden las cajas con el padding. Me respeta el width y el heigth*/
+  line-height: 1.2rem;
+  list-style: none; /*para sacar los botones de los li */
+  text-decoration: none; /* saca el subrayado de los a */
+  /* display:inline-block; hace que los inline adquieran las propiedades de los block ej width*/
+  /* overflow: auto; me pone un scroll solo cuando es necesario*/
+}
+
+
+/* para usar una fuente descargada hacer esto:
+@font-face{
+  font-family: "miFuente";
+  src: url(../assets/audio/fuente.ttf);
+}
+*/
+
+body{
+  font-family: Rubik;
+    /* background-color: lightsalmon; */
+}
+
+header{
+  height: 100vh;
+}
+
+.medioheader{
+  background-color: rgb(54, 54, 54);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: .1em;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 10%;
+}
+.codo{
+  margin-right: 2em;
+  display: flex;
+  flex-flow: row auto;
+  align-items: center;
+  object-fit: cover;
+}
+.codo h2{
+  color: white;
+}
+.fondos{
+   display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding-right: 1em;
+}
+.fondos a{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.aBlanco{
+  color: aliceblue;
+}
+.aGris{
+  color: gray;
+}
+#aTick{
+  color: green;
+}
+/*------fin del medioheader------*/
+
+#conferencia{
+  background-image: url(../assets/img/ba1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: rgb(18, 17, 17); */
+ height: 100%;
+ margin-bottom: .1em;
+}
+.fondoConf{
+  height: 100%;
+  /* background-color: rgb(27, 25, 25); */
+  /* opacity: .7; */
+  background-color: rgba(0,0,0,.5); /*el cuarto valor es para no usar opacity que afecta a todos los hijos*/
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+}
+.confAncho{
+  width: 50%;
+  height: 50%;
+  margin-top: 10em;
+  margin-right: 4em;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.confAncho h1{
+  margin: 0.5em 1em;
+}
+.confAncho p{
+  /* margin: 1em; */
+  text-align: right;
+}
+.a1{
+  margin: 0.5em;
+  padding: 0.5em;
+  color: aliceblue;
+  border-radius: 8%;
+  border: 1px white solid;
+}
+.a2{
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: green;
+  color: aliceblue;
+  border-radius: 8%;
+}
+/*-------fin del header------*/
+
+main{
+  margin: .1em;
+}
+
+#oradores{
+  margin: 0.1em;
+  padding: 0.1em;
+}
+#oradores h2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#oradores span{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45%;
+}
+
+.oraTitulo{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 0.5em;
+}
+/* margin: 100px auto; me sirve para centrar horizontalmente una caja */
+/* display: inline-block; sirve para centrar las tarjetas */
+
+.tarjetas{
+  display: flex;
+  flex-flow: row nowrap;
+  /* align-items: baseline; */
+  justify-content: center;
+  gap: .5em;
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.card{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30%;
+  border: 1px solid lightgrey;
+  border-radius: 2%;
+  overflow: hidden;
+}
+
+.card img{
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+  margin-bottom: 0.5em;
+}
+
+.anclasJS{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 1em;
+}
+.aJS{
+  margin: 0.1em;
+  padding: 0.1em;
+  background-color: yellow;
+  color: rgb(27, 26, 26);
+  border-radius: 8%;
+  font-size: 60%;
+  font-weight: bold;
+  /* border: 1px white solid; */
+  width: 7em;
+  text-align: center;
+}
+.aReact{
+  margin: 0.1em;
+  padding: 0.1em;
+  background-color: rgb(37, 123, 210);
+  color: aliceblue;
+  border-radius: 8%;
+  font-size: 60%;
+  width: 5em;
+  text-align: center;
+}
+.aNeg{
+  margin: 0.1em;
+  padding: 0.1em;
+  background-color: grey;
+  color: aliceblue;
+  border-radius: 8%;
+  font-size: 60%;
+  width: 7em;
+  text-align: center;
+}
+.aStart{
+  margin: 0.1em;
+  padding: 0.1em;
+  background-color: rgb(210, 11, 11);
+  color: aliceblue;
+  border-radius: 8%;
+  font-size: 60%;
+  width: 7em;
+  text-align: center;
+}
+
+.card h3{
+  margin: 0.5em;
+  margin-left: 1em;
+}
+.card p{
+  margin: 0.5em;
+  margin-left: 1em;
+}
+/*-----------Fin de Oradores---------------------*/
+
+#lugarfecha{
+  display: flex;
+  flex-flow: row nowrap;
+  /* justify-content: center; */
+  color: antiquewhite;
+  /* align-items: stretch; */
+  padding: .1em;
+  gap: 0.1em;
+}
+#lugarfecha img{
+  width: 41em;
+}
+.fondoGris{
+  background-color: rgb(29, 28, 28);
+}
+.fondoGris h2{
+  margin: .5em;
+}
+.fondoGris p{
+  margin: .5em;
+}
+.fondoGris a{
+  margin: .5em;
+  color: aliceblue;
+  /* text-decoration: none; */
+  padding: 0.1em;
+  border: 1px solid antiquewhite;
+  border-radius: 10%;
+}
+/*-------fin de lugar y fecha-------*/
+
+.conviertete{
+  margin: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.conv{
+  width: 50vw;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.conv h2{
+  margin: 1px auto;
+}
+.conv h2 span{
+  font-size: 50%;
+}
+.conv h3{
+  margin: 1em;
+  font-size: 70%;
+}
+.botonCharla{
+  width: 49%;
+  background-color: green;
+  color: aliceblue;
+}
+/*-------fin de conviertete------*/
+
+.ordenaFooter{
+  background: linear-gradient(to right, rgb(11, 11, 69), rgb(67, 86, 132));
+  height: 11vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.ordenaFooter a{
+  color: aliceblue;
+}
+
+
+
+@media screen and (max-width:1024px){/*notebook*/
+  /* .column-4{
+      grid-template-columns: repeat(1,1fr);
+  } */
+}
+
+@media screen and (max-width:768px){/*Tablet*/
+  .medioheader{
+    flex-direction: column;
+    position: absolute; 
+  }
+  .codo{
+    height: 100%;
+  }
+  .fondos{
+    background-color: rgb(54, 54, 54);
+    flex-direction: column;
+    height: auto;
+  }
+  .confAncho{
+    width: 90%;
+    /* height: 50%; */
+    margin-top: 8em;
+    margin-right: 2em;
+  }
+  .confAncho h1{
+    margin-top: 2em;
+  }
+  #lugarfecha{
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  #lugarfecha img{
+    width: 100%;
+  }
+  /*tarjetas*/
+  .tarjetas{
+    gap: .2em;
+    width: 100vw;
+    height: 100vh;
+  }
+  /*-------------*/
+  .fondoGris{
+    height: 14em;
+  }
+  /*--footer--*/
+  .ordenaFooter{
+    background: linear-gradient(to right, rgb(11, 11, 69), rgb(67, 86, 132));
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+  }
+}
+
+@media screen and (max-width:480px){/*Celular*/
+
+  .confAncho{
+    width: 95%;
+    height: 70%;
+    margin-top: 6em;
+    margin-right: 1em;
+    margin-left: 1em;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .confAncho h1{
+    margin-top: 3em;
+    margin-bottom: 0;
+  }
+  .confAncho p{
+    /* margin: 1em; */
+    text-align: right;
+  }
+  .a1{
+    max-width: 100px;
+  }
+  .a2{
+    max-width: 100px;
+  }
+  .tarjetas{
+    display: flex;
+    flex-direction: column;
+    /* align-items: baseline; */
+    justify-content: space-between;
+    gap: .5em;
+    width: 70vw;
+    height: 300vh;
+    margin: 0 auto;
+  }
+  .card{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 2%;
+    overflow: hidden;
+  }
+  .fondoGris{
+    height: 20em;
+  }
+}

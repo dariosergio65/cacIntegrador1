@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    height: 80vh;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap; /*esta propiedad solo se usa cuando los hijos tienen valores absolutos (px)*/
+    /* justify-content: flex-start; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;/*solamente funciona si tengo wrap y doble fila o columna de elementos*/
+}
+/* los hijos de los contenedores flex pasan a ser bloques flexibles */
+.hijo{
+    border: 1px solid red;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+}
+
+.nueve{
+    /*puedo hacer que un elemento se desaliñe*/
+    justify-self: flex-start;
+}

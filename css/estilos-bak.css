@@ -1,0 +1,94 @@
+/* css -- hojas de estilo en cascada */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+body{
+    background-color: lightsalmon;
+    margin: 0%;
+}
+
+li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+.card{
+    background-color: lightgreen;
+}
+
+
+
+
+header{
+  min-height: 30em;
+  background-image: url(../assets/img/ba1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.fondos{
+  background-color: lightgray;
+  opacity: 0.8;
+  padding: .5em;
+}
+.fondos ul{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+.fondos a{
+  color: blue;
+  opacity: 1;
+}
+
+#conferencia{
+  color: blue;
+  background: linear-gradient(to top, rgb(211 211 211 / 0.7), rgb(211 211 211 / 0.7));
+  /* background-color: lightgray;
+  opacity: 0.8; */
+  padding: .5em;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1em;
+}
+
+#conferencia button{
+  width: 10em;
+}
+
+.tarjetas{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  /* align-self: auto; */
+}
+
+.card img{
+  max-width: 20em ;
+  border-radius: 1em;
+}
+
+
+
+
+footer{
+  /* background-color: rgb(3, 3, 74); */
+  background: linear-gradient(rgb(5, 5, 40), rgb(24, 5, 97));
+  padding: 1em;
+  margin-top: 1em;
+}
+footer a{
+  text-decoration: none;
+  color: salmon;
+}
+
+.ordenaFooter{
+    display: flex;
+    flex-flow: row;
+    
+    justify-content: space-between;
+}
